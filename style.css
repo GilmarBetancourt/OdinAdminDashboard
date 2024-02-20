@@ -1,0 +1,96 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+.body{
+    font-family: "Roboto", sans-serif;
+}
+
+/*All the grid classes here*/
+
+.main-container, .header, .left-sidebar, .right-sidebar, .article, .main-nav, .second-nav, .search-row, .buttons-row, .announcements-box, .trending-box{
+    display:grid;
+}
+
+.main-container{
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.header{
+    background-color: beige;
+    grid-template-rows: 1fr 1fr;
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+.search-row{
+    grid-template-columns: 1fr 4fr 1fr 1fr 2fr;
+}
+
+.buttons-row{
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+}
+
+.left-sidebar{
+    background-color: rgb(100, 100, 224);
+    color:white;
+    grid-area: 1 /  1 / 3 / 1; /*Check this*/
+}
+
+.main-nav{
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.second-nav{
+    grid-template-rows: repeat(3, 1fr);
+    gap:10px;
+}
+
+.article{
+    background-color: aliceblue;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column: 2 / 3;
+    grid-row-start:2;
+    gap:15px;
+}
+
+.article-title{
+    grid-column: 1 / 3;
+    height:20px;
+}
+
+.card, .trending-account, .feed-card{
+    background-color: white;
+    border-style:solid;
+}
+
+.card{
+    height:200px
+}
+
+.article p{
+    color:grey;
+
+}
+
+.right-sidebar{
+    grid-template-rows: 1fr 4fr 1fr 4fr;
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: rgb(245, 245, 136);
+    gap:10px;
+
+}
+
+.announcements-box{
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.trending-box{
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
