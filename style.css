@@ -20,18 +20,28 @@ html {
 }
 
 .main-container{
-    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-columns: 1.3fr 4fr 2fr;
+    background-color: rgb(220, 220, 232);
 
 }
 
 .header{
-    background-color: beige;
+    background-color: white;
     grid-template-rows: 1fr 1fr;
     grid-area: 1 / 2 / 2 / 4;
+    padding-top: 1.5rem;
+    box-shadow: 0 8px 10px rgb(180, 180, 196);;
 }
 
 .search-row{
     grid-template-columns: 1fr 4fr 1fr 1fr 2fr;
+}
+
+.search-bar{
+    height:30px;
+    background-color: rgb(220, 220, 232);
+    border-radius: 15px;
+    border-style: none;
 }
 
 .buttons-row{
@@ -42,14 +52,15 @@ html {
     background-color: rgb(100, 100, 224);
     color:white;
     grid-area: 1 / 1 / 3 / 1; /*Check this*/
-    grid-template-rows: 150px 350px 400px;
+    grid-template-rows: 100px 350px 400px;
     font-weight: bold;
     
 }
 
 .dash-section{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:left;
+    padding-left: 2rem;
     align-items: center;
     font-size: 1.4rem;
     font-weight: bold;
@@ -60,7 +71,57 @@ html {
     gap: 8px;
     padding-bottom: 8px;
     list-style-type: none;
+    padding-left: 2rem;
     
+}
+
+/*Images as bullets in the list*/
+
+.main-nav li, .second-nav li{
+    padding-left: 2.3rem;
+    line-height: 30px;
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+
+.main-nav li:nth-child(1){
+    background-image:url('images/home-variant-white.png');
+}
+
+.main-nav li:nth-child(2){
+    background-image:url('images/card-account-details-outline-white.png');
+
+}
+.main-nav li:nth-child(3){
+    background-image:url('images/message-reply-white.png');
+
+}
+.main-nav li:nth-child(4){
+    background-image:url('images/clock-time-three-white.png');
+
+}
+.main-nav li:nth-child(5){
+    background-image:url('images/note-multiple-white.png');
+}
+
+.main-nav li:nth-child(6){
+    background-image:url('images/account-group-white.png');
+
+}
+
+.second-nav li:nth-child(1){
+    background-image:url('images/cog-white.png');
+
+}
+.second-nav li:nth-child(2){
+    background-image:url('images/help-box-white.png');
+
+}
+.second-nav li:nth-child(3){
+    background-image:url('images/shield-check-white.png');
+
 }
 
 .second-nav{
@@ -70,7 +131,7 @@ html {
 }
 
 .article{
-    background-color: aliceblue;
+    
     margin: 0 auto;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     grid-template-rows: 50px repeat(auto-fit, minmax(200px, 220px));
