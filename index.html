@@ -23,15 +23,24 @@
                 <div class="user-name">Gilmar Betancourt</div>
             </div>
             <div class="buttons-row">
-                <div class="user-icon">
-                    <img src="images/account-circle.svg" alt="profile picture" width="70px" height="70px">
-                </div>
-                <div class="user-greet">
-                    <p>Hi there, <br> Gilmar Betancourt (@gilmarbeta)</p>
-                </div>
-                <button class="new">New</button>
-                <button class="upload">Upload</button>
-                <button class="share">Share</button>
+                <form class="buttons-row" action="">
+                    <div class="newTitle">
+                        <label for="title">Title</label>
+                        <input type="text" id="title">
+                    </div>
+                    <div class="newAuthor">
+                        <label for="author">Author</label>
+                        <input type="text" id="author">
+                    </div>
+                    <div class="status">
+                        <label for="status">Status</label>
+                        <select name="status" id="">
+                            <option value="read">Read</option>
+                            <option value="toread">To Read</option>
+                        </select>
+                    </div>
+                </form>
+                <button class="new">Add</button>
             </div>
         </div>
     
@@ -43,10 +52,7 @@
                 <ul class="main-nav">
                     <li class="item">Home</li>
                     <li class="item">Profile</li>
-                    <li class="item">Messages</li>
                     <li class="item">History</li>
-                    <li class="item">Tasks</li>
-                    <li class="item">Communities</li>
                 </ul>
                 <ul class="second-nav">
                     <li class="item">Settings</li>
@@ -57,10 +63,10 @@
 
           
           <div class="article">
-            <h3 class="article-title">Your Projects</h3>
+            <h2 class="article-title">Your Books</h2>
                 <div class="card">
-                    <p class="title">Super Cool Project</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud...</p>
+                    <h2 class="title">Fight Club</h2>
+                    <h3>Chuck Palahniuk </h3>
                     <div class="card-icons">
                         <img src="images/star-plus-outline.svg" alt="Star this project">
                         <img src="images/eye-plus-outline.svg" alt="Mark as seen">
@@ -68,8 +74,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <p class="title">Less Cool Project</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud...</p>
+                    <h2 class="title">The Little Prince</h2>
+                    <h3>Antoine de Saint-Exupéry</h3>
                     <div class="card-icons">
                         <img src="images/star-plus-outline.svg" alt="Star this project">
                         <img src="images/eye-plus-outline.svg" alt="Mark as seen">
@@ -77,8 +83,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <p class="title">Impossible App</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud...</p>
+                    <h2 class="title">Frankenstein</h2>
+                    <h3>Mary Shelley</h3>
                     <div class="card-icons">
                         <img src="images/star-plus-outline.svg" alt="Star this project">
                         <img src="images/eye-plus-outline.svg" alt="Mark as seen">
@@ -86,8 +92,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <p class="title">Easy Peasy App</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud...</p>
+                    <h2 class="title">Harry Potter</h2>
+                    <h3>J.K. Rowling</h3>
                     <div class="card-icons">
                         <img src="images/star-plus-outline.svg" alt="Star this project">
                         <img src="images/eye-plus-outline.svg" alt="Mark as seen">
@@ -95,8 +101,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <p class="title">Add Blocker</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud...</p>
+                    <h2 class="title">The Amber Room</h2>
+                    <h3>Steve Berry</h3>
                     <div class="card-icons">
                         <img src="images/star-plus-outline.svg" alt="Star this project">
                         <img src="images/eye-plus-outline.svg" alt="Mark as seen">
@@ -104,55 +110,14 @@
                     </div>
                 </div>
                 <div class="card">
-                    <p class="title">Money Maker</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud...</p>
+                    <h2 class="title">The Storyteller</h2>
+                    <h3>Dave Grohl</h3>
                     <div class="card-icons">
                         <img src="images/star-plus-outline.svg" alt="Star this project">
                         <img src="images/eye-plus-outline.svg" alt="Mark as seen">
                         <img src="images/source-fork.svg" alt="Fork this project">
                     </div>
                 </div>     
-          </div>
-          <div class="right-sidebar">
-            <h3 class="announcements">Announcements</h3>
-            <div class="announcements-box">
-                <div class="feed-card">
-                    <p class="feed-title">Site Maintenance</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                <div class="feed-card">
-                    <p class="feed-title">Community Share Day</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                <div class="feed-card">
-                    <p class="feed-title">Updated Privacy Policy</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div> 
-            </div>
-            <h3 class="trending">Trending</h3>
-            <div class="trending-box">
-                <div class="trending-account">
-                    <img src="images/account-circle.svg" alt="account logo" class="account-pic" width="40px" height="40px">
-                    <p class="account-name">@tegan</p>
-                    <p>World peace builder.</p>
-                </div>
-                <div class="trending-account">
-                    <img src="images/account-circle.svg" alt="account logo" class="account-pic" width="40px" height="40px">
-                    <p class="account-name">@morgan</p>
-                    <p>Super cool project</p>
-                </div>
-                <div class="trending-account">
-                    <img src="images/account-circle.svg" alt="account logo" class="account-pic" width="40px" height="40px">
-                    <p class="account-name">@kendall</p>
-                    <p>Life changing app.</p>
-                </div>
-                <div class="trending-account">
-                    <img src="images/account-circle.svg" alt="account logo" class="account-pic" width="40px" height="40px">
-                    <p class="account-name">@alex</p>
-                    <p>No traffic maker.</p>
-                </div>
-            </div>
-            </h3>
           </div>
     </div>
 </body>
