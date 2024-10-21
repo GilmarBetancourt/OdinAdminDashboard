@@ -40,6 +40,7 @@ html {
     grid-area: 1 / 2 / 2 / 4;
     box-shadow: 0 8px 10px rgb(180, 180, 196);
     padding-bottom: 0.7rem;
+    padding-top: 0.5rem;
 }
 
 .search-row{
