@@ -8,9 +8,11 @@ function Book(author, title, pages, read){
     this.read = read;
 }
 
-document.getElementById('bookForm').addEventListener('submit', 
-    function(event) {
-        event.preventDefault();
+let newBook={};
+
+document.getElementById('formButton').addEventListener('click', 
+    function() {
+        //event.preventDefault();
         
         //get the information from the form
         const author =  document.getElementById("author").value;
@@ -19,7 +21,7 @@ document.getElementById('bookForm').addEventListener('submit',
         const read = document.getElementById("status").value;
         
         //create a new book instance
-        const newBook = new Book(author, title, pages, read);
+        newBook = new Book(author, title, pages, read);
         
         addBookToLibrary(newBook);
 
@@ -32,9 +34,9 @@ document.getElementById('bookForm').addEventListener('submit',
 function addBookToLibrary(){
 
     //this is the idea display the new book in the DOM
-    const booksList = document.getElementById('booksList');
-    const bookDiv = document.createElement('div');
-    bookDiv.textContent = `Author: ${book.author}, Title: ${book.title}, Pages: ${book.pages}, Read: ${book.read ? 'Yes' : 'No'}`;
-    booksList.appendChild(bookDiv);
+    const booksCards = document.getElementById('article');
+    const cardDiv = document.createElement('div');
+    cardDiv.textContent = `Author: ${newBook.author}, Title: ${newBook.title}, Pages: ${newBook.pages}, Read: ${newBook.read}`;
+    booksCards.appendChild(cardDiv);
             
 }
