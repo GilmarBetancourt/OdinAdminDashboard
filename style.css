@@ -229,28 +229,28 @@ li:hover {
 
 .title{
     padding: 3rem 0 0 1.5rem;
-
 }
 
 h3{
     padding: 1rem 0 0 1.5rem;
 }
 
-.article p{
-    padding-left: 1rem;
+.pages, .status{
+    padding-left: 1.5rem;
     padding-top: 1.5rem;
+    font-weight: bold;
 }
+
 
 .card-icons img{
     width:25px;
     height: 25px;
-    padding-left: 1rem;
 }
 
 .card-icons{
     display:flex;
     padding-right: 1rem;
-    padding-top: 70%;
+    padding-top: 30%;
     align-self: flex-end; 
     height: 100%; 
 }
