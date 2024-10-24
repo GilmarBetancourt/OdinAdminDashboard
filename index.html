@@ -38,11 +38,11 @@
                         <input type="text" id="pages">
                     </div>
 
-                    <div class="status">
+                    <div class="statusField">
                         <label for="status">Status</label>
                         <select name="status" id="status">
-                            <option value="read">Read</option>
-                            <option value="toread">To Read</option>
+                            <option value="Read">Read</option>
+                            <option value="Not read">Not Read</option>
                         </select>
                     </div>
                 </form>
@@ -74,66 +74,10 @@
                     <h2 class="title">Fight Club</h2>
                     <h3 class="author">Chuck Palahniuk </h3>
                     <p class="pages">Pages:265</p>
-                    <p class="status">Read</p>
-                    <div class="card-icons">
-                        <img src="images/star-plus-outline.svg" alt="Star this project">
-                        <img src="images/eye-plus-outline.svg" alt="Mark as seen">
-                        <img src="images/share-svgrepo-com.svg" alt="Share">
-                        <img src="images/delete-1-svgrepo-com.svg" alt="Delete this book">
-                    </div>
+                    <button class="status" id="readStatus" onclick="changeStatus(this)">Read</button>
+                    <span class="trash">✗</span>
                 </div>
-                <div class="card">
-                    <h2 class="title">The Little Prince</h2>
-                    <h3>Antoine de Saint-Exupéry</h3>
-                    <div class="card-icons">
-                        <img src="images/star-plus-outline.svg" alt="Star this project">
-                        <img src="images/eye-plus-outline.svg" alt="Mark as seen">
-                        <img src="images/share-svgrepo-com.svg" alt="Share">
-                        <img src="images/delete-1-svgrepo-com.svg" alt="Delete this book">
-
-                    </div>
-                </div>
-                <div class="card">
-                    <h2 class="title">Frankenstein</h2>
-                    <h3>Mary Shelley</h3>
-                    <div class="card-icons">
-                        <img src="images/star-plus-outline.svg" alt="Star this project">
-                        <img src="images/eye-plus-outline.svg" alt="Mark as seen">
-                        <img src="images/share-svgrepo-com.svg" alt="Share">
-                        <img src="images/delete-1-svgrepo-com.svg" alt="Delete this book">
-                    </div>
-                </div>
-                <div class="card">
-                    <h2 class="title">Harry Potter</h2>
-                    <h3>J.K. Rowling</h3>
-                    <div class="card-icons">
-                        <img src="images/star-plus-outline.svg" alt="Star this project">
-                        <img src="images/eye-plus-outline.svg" alt="Mark as seen">
-                        <img src="images/share-svgrepo-com.svg" alt="Share">
-                        <img src="images/delete-1-svgrepo-com.svg" alt="Delete this book">
-                    </div>
-                </div>
-                <div class="card">
-                    <h2 class="title">The Amber Room</h2>
-                    <h3>Steve Berry</h3>
-                    <div class="card-icons">
-                        <img src="images/star-plus-outline.svg" alt="Star this project">
-                        <img src="images/eye-plus-outline.svg" alt="Mark as seen">
-                        <img src="images/share-svgrepo-com.svg" alt="Share">
-                        <img src="images/delete-1-svgrepo-com.svg" alt="Delete this book">
-                    </div>
-                </div>
-                <div class="card">
-                    <h2 class="title">The Storyteller</h2>
-                    <h3>Dave Grohl</h3>
-                    <div class="card-icons">
-                        <img src="images/star-plus-outline.svg" alt="Star this project">
-                        <img src="images/eye-plus-outline.svg" alt="Mark as seen">
-                        <img src="images/share-svgrepo-com.svg" alt="Share">
-                        <img src="images/delete-1-svgrepo-com.svg" alt="Delete this book">
-                
-                    </div>
-                </div>     
+                    
           </div>
     </div>
 </body>

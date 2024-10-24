@@ -82,7 +82,7 @@ form div{
 }
 
 
-button{
+.new{
     width:100px;
     margin-right: 1rem;
     margin-left: 2rem;
@@ -98,7 +98,7 @@ button{
    align-self: end;
 }
 
-button:hover{
+.new:hover{
     transform: scale(1.05); 
 }
 
@@ -220,7 +220,7 @@ li:hover {
     border-color: var(--left-dashboard-color);
     box-shadow: 5px 5px 5px rgb(180, 180, 196); 
     transition: all .2s ease-in-out;
-    cursor: pointer;
+    
 }
 
 .card:hover{
@@ -235,12 +235,32 @@ h3{
     padding: 1rem 0 0 1.5rem;
 }
 
-.pages, .status{
+.pages{
     padding-left: 1.5rem;
     padding-top: 1.5rem;
     font-weight: bold;
 }
 
+.status{
+    margin-left: 1.5rem;
+    margin-top:1rem;
+    width: 5rem;
+    font-weight: bold;
+    background-color: #ead9bc;
+    padding: 0.2rem 0 0.2rem 0;
+    cursor: pointer;
+}
+
+.trash {
+    display:flex;
+    padding-right: 1rem;
+    padding-top:30%;
+    align-self:flex-end;
+    height:100%;
+    cursor: pointer;
+    color: black;
+    font-size: 2rem;
+}
 
 .card-icons img{
     width:25px;
