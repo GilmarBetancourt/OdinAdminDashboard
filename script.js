@@ -13,13 +13,23 @@ document.getElementById('formButton').addEventListener('click',
         event.preventDefault();
        
         //get the information from the form
-        const author =  document.getElementById("author").value;
-        const title = document.getElementById("title").value;
-        const pages = document.getElementById("pages").value;
+        const author =  document.getElementById("author").value.trim();
+        const title = document.getElementById("title").value.trim();
+        const pages = document.getElementById("pages").value.trim();
         const read = document.getElementById("status").value;
-        
-        //create a new book instance
-        let newBook = new Book(author, title, pages, read);
+
+        // Convert pages to a number
+        const pagesNumber = Number(pages);
+
+         //input validation
+        if (!author || !title || !pages || isNaN(pagesNumber)) {
+            alert("Please fill in all fields correctly.");
+            return; // Exit the function if validation fails
+        }
+
+        // Create a new book instance
+        let newBook = new Book(author, title, pagesNumber, read);
+
         
         //add the book to the array
         myLibrary.push(newBook);
@@ -64,6 +74,7 @@ function addBookToLibrary(book){
     bookStatus.textContent = book.read;
     trashIcon.textContent = "✗";
 
+    
     //appending the elements to the card
     cardDiv.appendChild(bookTitle);
     cardDiv.appendChild(bookAuthor);
@@ -71,8 +82,11 @@ function addBookToLibrary(book){
     cardDiv.appendChild(bookStatus);
     cardDiv.appendChild(trashIcon);
 
+   
     //appending the card to the article
     articleDiv.appendChild(cardDiv);
+
+    saveLibrary();
             
 }
 
@@ -96,4 +110,25 @@ function removeBook(cardDiv, book) {
 
     // Remove the card from the DOM
     cardDiv.remove();
+    saveLibrary();
 }
+
+//To save the library in the local storage
+
+function saveLibrary() {
+    localStorage.setItem('myLibrary', JSON.stringify(myLibrary));
+}
+
+function loadLibrary() {
+    const storedLibrary = localStorage.getItem('myLibrary');
+    if (storedLibrary) {
+        const books = JSON.parse(storedLibrary);
+        books.forEach(book => {
+            myLibrary.push(book);
+            addBookToLibrary(book);
+        });
+    }
+}
+
+// Call loadLibrary when the page loads
+window.onload = loadLibrary;

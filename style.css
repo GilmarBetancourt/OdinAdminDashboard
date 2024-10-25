@@ -28,7 +28,9 @@ html {
 
 .main-container{
     grid-template-columns: 1.3fr 4fr 1.5fr;
+    grid-template-rows: 130px auto;
     background-color: var(--article-bg-color);
+
 
 }
 
@@ -262,17 +264,6 @@ h3{
     font-size: 2rem;
 }
 
-.card-icons img{
-    width:25px;
-    height: 25px;
-}
 
-.card-icons{
-    display:flex;
-    padding-right: 1rem;
-    padding-top: 30%;
-    align-self: flex-end; 
-    height: 100%; 
-}
 
 
